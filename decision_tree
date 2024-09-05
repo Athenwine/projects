@@ -1,0 +1,26 @@
+digraph {
+	0 [label="texture_mean <= 17.745
+ gini = 0.619
+ samples = 569
+ value = [257, 222, 90]"]
+	1 [label="gini = 0.0
+ samples = 222
+ value = [0, 222, 0]"]
+	2 [label="texture_mean <= 23.415
+ gini = 0.384
+ samples = 347
+ value = [257, 0, 90]"]
+	3 [label="gini = 0.0
+ samples = 257
+ value = [257, 0, 0]"]
+	4 [label="gini = 0.0
+ samples = 90
+ value = [0, 0, 90]"]
+	0 -> 1 [label=True]
+	0 -> 2 [label=False]
+	2 -> 3 [label=True]
+	2 -> 4 [label=False]
+	size="8,5"
+	node [color=black fontname=helvetica shape=box style="filled, rounded"]
+	edge [fontname=helvetica]
+}
